@@ -1,0 +1,55 @@
+@import 'variables';
+
+
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: $nav-bg-color;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em 0 5em;
+    position: fixed;
+    top: 0;
+
+    &__title {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: $principal-text-color;
+        text-transform: uppercase;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    .button {
+        background-color: $button-color;
+
+        &:hover {
+            background-color: $principal-text-color;
+            color: $button-color;
+        }
+
+    }
+}
+
+.button {
+    height: 3em;
+    min-width: 8em;
+    padding: 0 .5em;
+    color: $principal-text-color;
+    border: 1px solid $principal-bg-color;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+
+}
+.icon {
+    margin-right: .5em;
+}

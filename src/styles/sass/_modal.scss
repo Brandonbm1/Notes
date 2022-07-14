@@ -1,0 +1,36 @@
+.edit__note-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 3vh;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease;
+    &--container{
+        width: 90%;
+        max-width: 700px;
+        margin: auto;
+        background-color: $nav-bg-color;
+        border-radius: 10px;
+        padding: 3em 2.5em;
+        place-items: center;
+        transform: translateY(-100vh);
+        transition: transform .8s ease;
+        .form{
+
+        }
+    }
+    &.--active{
+        opacity: 1;
+        pointer-events: all;
+        .edit__note-modal--container{
+            transform: translateY(0);
+        }
+        
+    }
+    
+}

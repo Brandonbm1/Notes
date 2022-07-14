@@ -1,0 +1,17 @@
+// Fixed variables
+$principal-text-color: #ffffff;
+$cancel-color: #e23518;
+$cancel-color-hover: #a23518;
+
+// Ligth theme variables
+$principal-bg-color: #dadada;
+$nav-bg-color: #3cb99a;
+$button-color: #26eebc;
+$button-color-hover: $principal-text-color;
+
+.dark {
+    $principal-bg-color: #282b2e;
+    $nav-color: #2b203c;
+    $button-color: #7214ff;
+    $button-color-hover: $principal-text-color;
+}

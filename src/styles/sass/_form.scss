@@ -1,0 +1,83 @@
+@import 'variables';
+
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &__container {
+        &>div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2em;
+        }
+    }
+
+    &__title {
+        &-text {
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 500px;
+            outline: none;
+            border: 1px solid $nav-bg-color;
+        }
+
+        &-label {
+            color: $principal-text-color;
+            text-transform: uppercase;
+            margin-bottom: .2em;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+    }
+
+    &__comment {
+        &-text {
+            padding: 10px;
+            border-radius: 5px;
+            height: 130px;
+            resize: none;
+            outline: none;
+            border: 1px solid $nav-bg-color;
+        }
+
+        &-label {
+            color: $principal-text-color;
+            margin-bottom: .2em;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+    }
+}
+
+.keypad {
+    margin-top: 10px;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+
+    &-cancel {
+        background-color: $cancel-color;
+
+        &:hover {
+            background-color: $principal-text-color;
+            color: $cancel-color;
+        }
+    }
+
+    &-save {
+        background-color: $button-color;
+
+        &:hover {
+            background-color: $principal-text-color;
+            color: $button-color;
+        }
+    }
+
+}
+
+.disabled {
+    display: none;
+}

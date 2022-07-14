@@ -1,0 +1,30 @@
+@import 'variables';
+
+.note-container{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    place-content: center;
+    cursor: pointer;
+
+    &__note {
+        background-color: #fffbef;
+        border-radius: 15px ;
+        padding: 1em 1.2em;
+        
+
+        &-title {
+            display: block;
+            width: 100%;
+        }
+        &-comment {
+            min-height: 60%;
+            max-width: 100%;
+        }
+        &-id{
+            position: absolute;
+            top: 80px;
+        }
+    }   
+}
+
